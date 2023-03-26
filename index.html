@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+    <style>
+      .card {
+        transition: all 0.5s;
+      }
+
+      .card:hover {
+        transform: translate(10px, -10px);
+        box-shadow: 2px 2px 20px blue;
+        transition: all 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Üst Taraf -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-1">
+          <img src="/images/Udemig.png" style="width: 50px" /> Udemig</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menü</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/"
+                  >Anasayfa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/egitimlerimiz.html">Eğitimlerimiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">İleitişim</a>
+              </li>
+            </ul>
+            <div class="btn-group">
+              <a class="btn btn-info">Giriş Yap</a>
+              <a class="btn btn-success">Kayıt Ol</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Üst Taraf son -->
+    <!-- Karşılama alanı -->
+
+    <!-- 
+        lg > geniş ekranlar
+        md > laptop / tablet
+        sm > telefon
+     -->
+
+    <div class="container my-5">
+      <div class="row border shadow p-5 rounded">
+        <div class="col-lg-6 col-sm-12">
+          <h1>Yazılım Öğrenmek Istiyorsanız Doğru Yerdesiniz</h1>
+          <p>
+            Teknolojiye adım atmaya hazır mısınız? Yazılım eğitim kampımız, sizi
+            yazılım dünyasında başarılı olmanız için ihtiyaç duyduğunuz bilgi ve
+            becerilerle donatmak için tasarlanmıştır. Eğitmenlerimiz, öğrenme
+            yolculuğunuzun her adımında size rehberlik edecek ve size bir
+            kodlama uzmanı olmanız için gereken güveni ve araçları verecektir!
+          </p>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <img
+            src="/images/banner.png"
+            class="w-100"
+            style="max-width: 400px"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Kartlar -->
+    <div class="d-flex flex-wrap gap-5 justify-content-center my-5">
+      <!-- Kart -->
+      <div class="card" style="width: 18rem">
+        <div class="card-head d-flex align-items-center" style="height: 290px">
+          <img src="/images/front-end.jpg" class="w-100" />
+        </div>
+        <div class="card-body">
+          <h3 class="border-bottom pb-3 text-center">Frontend</h3>
+          <p class="lead">
+            Frontend eğitimi bootcampi, web tasarımı ve geliştirme becerilerini
+            geliştirmek için profesyonel bir programdır. HTML, CSS, JavaScript
+            ve diğer teknolojiler öğrenilir.
+          </p>
+          <button class="btn btn-primary w-100">Detaylı Bilgi</button>
+        </div>
+      </div>
+      <!-- Kart -->
+      <div class="card" style="width: 18rem">
+        <div class="card-head d-flex align-items-center" style="height: 290px">
+          <img src="/images/quality.jpg" class="w-100" />
+        </div>
+        <div class="card-body">
+          <h3 class="border-bottom pb-3 text-center">Quality Assuarance</h3>
+          <p class="lead">
+            Mükemmeliyetçi yazılım test etme becerileri kazandırmak için
+            profesyonel bir programdır. Test metodları, en iyi uygulamalar ve
+            araçlar öğrenilir.
+          </p>
+          <button class="btn btn-primary w-100">Detaylı Bilgi</button>
+        </div>
+      </div>
+      <!-- Kart -->
+      <div class="card" style="width: 18rem">
+        <div class="card-head d-flex align-items-center" style="height: 290px">
+          <img src="/images/react-native.jpg" class="w-100" />
+        </div>
+        <div class="card-body">
+          <h3 class="border-bottom pb-3 text-center">React Native</h3>
+          <p class="lead">
+            Mükemmeliyetçi yazılım test etme becerileri kazandırmak için
+            profesyonel bir programdır. Test metodları, en iyi uygulamalar ve
+            araçlar öğrenilir.
+          </p>
+          <button class="btn btn-primary w-100">Detaylı Bilgi</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALt Taraf -->
+    <div class="container bg-black text-light rounded shadow my-5">
+      <h1 class="text-center pt-3">NEYİ AMAÇLIYORUZ</h1>
+      <div class="row p-4 gap-3">
+        <!-- BİR Sütun -->
+        <div class="col border p-3 bg-secondary rounded shadow">
+          <h1 class="text-warning">Gerçeğe Dayalı</h1>
+          <p class="lead">
+            Öğrencilere gerçek dünya uygulamalarında kullanabilecekleri
+            beceriler kazandırmaktır. Örneğin, öğrenciler web siteleri ve
+            uygulamalar yazabilecek, veri analizi yapabilecek, veritabanları
+            yönetebilecek veya mobil uygulamalar oluşturabilecektir.
+          </p>
+        </div>
+        <!-- Sütun Son -->
+        <!-- BİR Sütun -->
+        <div class="col border p-3 bg-secondary rounded shadow">
+          <h1 class="text-warning">Temel Beceriler</h1>
+          <p class="lead">
+            Öğrencilere temel programlama kavramlarını ve pratik uygulamalarını
+            öğretmektir. Bu, öğrencilere bilgisayar programlama dilleri
+            konusunda temel bilgi ve becerileri kazandırmak için gereklidir.
+          </p>
+        </div>
+        <!-- Sütun Son -->
+        <!-- BİR Sütun -->
+        <div class="col border p-3 bg-secondary rounded shadow">
+          <h1 class="text-warning">Temel Beceriler</h1>
+          <p class="lead">
+            Program süresince öğrencilere gerçek dünya uygulamalarında
+            kullanabilecekleri beceriler kazandırmak ve onları iş pazarına
+            hazırlamak için tasarlanmıştır. Öğrenciler programı bitirdikten
+            sonra, yazılım sektöründe iş bulabilecektir.
+          </p>
+        </div>
+        <!-- Sütun Son -->
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
